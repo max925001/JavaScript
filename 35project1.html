@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="35project1.css">
+</head>
+<body><div class="home">
+    <button><a href="#">Home</a></button>
+    <button><a href="#">About Us</a></button>
+</div>
+    <div class="main">
+
+
+
+        <h1>Background color changer</h1>
+        <div class="click">
+<button class="button" id="grey">Grey</button>
+<button class="button" id="red">RED</button>
+<button class="button" id="green">Green</button>
+<button class="button" id="yellow">Yellow</button>
+</div>
+    </div>
+
+<footer>
+    <h1> Click on any button for changing color</h1>
+</footer>
+
+</body>
+<script>
+
+const buttons= document.querySelectorAll('.button')
+//console.log(buttons)
+const body = document.querySelector('body')
+console.log(body)
+buttons.forEach(function(change){
+// console.log(button)
+change.addEventListener('click', function(e){
+    console.log(e)
+    console.log(e.target)
+if(e.target.id ==="grey"){
+    body.style.backgroundColor = e.target.id
+}
+if(e.target.id ==="red"){
+    body.style.backgroundColor = e.target.id
+}
+if(e.target.id ==="green"){
+    body.style.backgroundColor = e.target.id
+}
+if(e.target.id ==="yellow"){
+    body.style.backgroundColor = e.target.id
+}
+})
+
+
+
+
+})
+
+</script>
+</html>

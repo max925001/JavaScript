@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(195, 61, 61);">
+  <!--- api.github.com see some api 
+//https://randomuser.me/
+//jsonformatter-->
+<!--XMLhttp MDN-->
+</body>
+<script>
+
+
+//ye sab inspect me dekhna hai
+    const requesturl ='https://api.github.com/users/max925001' 
+ const xhr =new XMLHttpRequest()
+ xhr.open('GET',requesturl) // open do cheez leta hai
+// console.log(xhr.readyState)
+xhr.onreadystatechange = function()
+{
+    console.log(xhr.readyState)
+    if(xhr.readyState===4)
+    {
+        const data = JSON.parse(this.responseText) //JSON.parse use for converting string into object
+       // console.log(typeof data)
+       console.log(data.followers)
+    }
+}
+
+xhr.send()
+</script>
+</html>/

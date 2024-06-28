@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html events</title>
+</head>
+<body style="background-color:#414141; color:aliceblue">
+    <h2>Amazing image</h2>
+    <div>
+
+<ul id="images">
+
+
+
+    <li>
+
+        <img  width="200px" id="photoshop" src="images/2023-06-21.png" alt="photoshop">
+    </li>
+    <li>
+        <img width="200px" id="japan" src="images/download.jpeg" alt="">
+    </li>
+    <li><img width="200px" id="river" src="images/Rivers-of-the-World-Cover.webp" alt=""></li>
+    <li><img  width="200px" id="owl" src="images/download (1).jpeg" alt=""  ></li> <!---//  write after alt onclick="alert('hello')" but this is not good approch is html-----> 
+    <li><a href=""></a></li>
+</ul>
+
+
+    </div>
+</body>
+<script>
+
+// javascript me jitne bhi events hote hai vo sequence me he run hota hai but axception hai
+
+// document.getElementById('owl').onclick = function(){
+//     alert("owl clicked") // but this is also not good approach 
+// }
+
+
+
+//best apporach
+
+
+// document.getElementById('owl').addEventListener('click',function(){
+// // alert("owl clicked")
+// })
+
+
+
+/// event object very important
+document.getElementById('owl').addEventListener('click',function(e){
+console.log(e)
+ },false) //falsr ka mtlb hai event bubble
+ //true ka mtlb hai event capturing
+ //learn
+ // type ,timestamp,defaultprevented,target,toElement,srcElement,currentTarget,clientx,clienty,srceenx,screeny,altkey,ctrlkey
+ //keycode
+
+//  document.getElementById('images').addEventListener('click',function(e){
+// console.log("clicked inside")
+//  },false)// ye bottom to top run hoga use inspect to see
+
+//  document.getElementById('owl').addEventListener('click',function(e){
+// console.log("owl clicked")
+//  },false)// ye bottom to top run hoga use inspect to see
+//  document.getElementById('images').addEventListener('click',function(e){
+// console.log("clicked inside")
+//  },true)// ye top to bottom run hoga
+
+//  document.getElementById('owl').addEventListener('click',function(e){
+// console.log("owl clicked")
+//  },true) // ye top to bottom run hoga
+//next apporach
+//attachEvent
+//jQuery
+
+// document.getElementById('images').addEventListener('click',function(e){
+// console.log("clicked inside")
+// e.stopPropagation()
+//  },false)
+
+
+
+// on click image remove
+
+
+document.querySelector('#images').addEventListener('click',function(e){
+// console.log(e.target.tagName)
+// if(e.target.tagName==='IMG'){
+// console.log(e.target.id)
+// }
+
+
+let removeIt = e.target.parentNode
+//removeIt.remove()
+removeIt.parentNode.removeChild(removeIt)
+
+},false)
+
+
+
+</script>
+</html>

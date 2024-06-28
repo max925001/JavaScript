@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="toggle.css">
+  <link rel="stylesheet" href="  https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+</head>
+<body>
+  
+ <div class="hero">
+<nav>
+
+
+    <img src="/images/depositphotos_183179050-stock-illustration-letters-logo-initial-logo-identity.jpg" class="logo" >
+    <ul>
+
+
+
+        <li><a href="#">Home
+
+        </a>
+    <div class="sub-menu-1">
+        <ul><li><a href=""></a>vision</li>
+            <li><a href=""></a>mission</li>
+            <li><a href=""></a>objective</li>
+        
+        
+        
+        
+        </ul>
+        
+    </div>
+   
+    </li>
+           
+      
+        <li><a href="#">Feature</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+        
+      
+    <img src="/images/2023-06-21.png" class="user-pic" onclick="togglemenu()" >
+    <div class="sub-menu-wrap" id="submenu"> 
+          <div class="sub-menu">
+            <div class="user-info">
+                <img src="/images/2023-06-21.png" >
+                <h2>Shivam Pandey</h2>
+            </div>
+            <hr>
+            <a href="#" class="sub-menu-link">
+                <i class="fa-solid fa-address-card"></i>
+               <p>Edit 7 Profile</p>
+               <span><i class="fa-solid fa-chevron-right"></i></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+               <p>Setting & Privacy</p>
+               <span><i class="fa-solid fa-chevron-right"></i></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+                <i class="fa-solid fa-question"></i>
+               <p>Help & privacy</p>
+               <span><i class="fa-solid fa-chevron-right"></i></span>
+            </a> <a href="#" class="sub-menu-link">
+                <i class="fa-solid fa-right-from-bracket"></i>
+               <p>LogOut</p>
+               <span><i class="fa-solid fa-chevron-right"></i></span>
+            </a> 
+            
+          </div>
+
+
+        
+
+
+</div>
+ 
+
+</nav>
+
+
+
+
+
+<script>
+
+    let submenu = document.getElementById('submenu')
+    function togglemenu(){
+        submenu.classList.toggle("open-menu")
+    }
+
+
+
+ 
+   
+</script>
+</body>
+</html>

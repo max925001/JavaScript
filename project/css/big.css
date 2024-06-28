@@ -1,0 +1,162 @@
+html,body{
+
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    
+}
+a{
+
+    text-decoration: none;
+    color: grey;
+}
+.flex-row{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /*   iska use hme inspect ke ja kar dekhna hoga ye sab ko ek sath rakhta hai*/
+    
+    }
+    ul{
+        list-style-type: none; /* isko karne se point hat jata hai li ka*/
+    }
+.nav{
+
+    background: white;
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 10vh;
+    overflow: hidden;
+
+}
+.nav .nav-menu{
+
+justify-content: space-between;
+
+}
+.nav .toggle-collpase{
+    position: absolute;
+    top: 0%;
+    
+    
+    width: 80%;
+    cursor: pointer;
+    display: none;
+}
+.nav .toggle-collpase .toggle-icons{
+
+    display: flex;
+   justify-content: flex-end;
+   padding: 1.7rem 0;
+    
+}
+.nav .toggle-collpase .toggle-icons i{
+
+    font-size: 1.4rem;
+    color: grey;
+}
+.collapase{
+height: 20rem;
+
+}
+.collapase{
+height: 30rem;
+
+}
+.nav .nav-item{
+
+    
+    display: flex;
+    margin: 0;
+
+}
+.nav .nav-item .nav-link{
+padding: 1.6rem 1rem;
+font-size:1.1rem ;
+position: relative;
+
+
+}
+.nav .nav-item .nav-link:hover{
+    background-color: midnightblue;
+    
+}
+.nav .nav-item .nav-link:hover a{
+    color: aliceblue;
+}
+.nav .nav-brand a{
+
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.nav .social{
+    padding: 1.4rem 0;
+}
+.nav .social i{
+    padding: 0 .2rem;
+
+}
+.nav .social:hover{
+color: #a1c4cf;
+}
+
+.openmenu{
+height: 1000px;
+}
+main .site-title{
+   background: url(./assets/Background-image.png);
+background-size: cover;
+height: 110vh;
+   display: flex; 
+   justify-content: center;
+}
+
+main .site-title .site-background{
+
+padding-top:10rem ;
+text-align: center;
+color: white;
+
+}
+main .site-title h1 h3{
+margin: 3rem;
+
+}
+main .site-title .btn{
+margin: 1.8rem;
+background: skyblue;
+border: none;
+border-radius: 2rem;
+padding: 1rem 3rem;
+cursor: pointer;
+font-size: medium;
+
+}
+main .site-title .btn:hover{
+    background: transparent;
+    color: aliceblue;
+    border: 1px solid white;
+
+}
+main h3{
+
+    font-size: 1.3rem;
+}
+main h1{
+    font-size: 2.5rem;
+}
+
+@media only screen and (max-width:750px){
+
+    .nav .nav-menu,.nav .nav-item {
+        flex-direction: column;
+    }
+    .nav .toggle-collpase{
+        display:initial ;
+    }
+}
+
+

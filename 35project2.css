@@ -1,0 +1,87 @@
+*{
+
+
+    margin: 0;;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+
+    background-color: aqua;
+}
+
+.home{
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: aqua;
+
+}
+button{
+height: 50px;
+width: 100px;
+font-size: medium;
+font-weight: 600;
+margin-top: 2px;
+margin-bottom: 2px;
+margin: 2px;
+
+}
+.bmi h1{
+
+display: flex;
+justify-content: center;
+
+
+}
+.bmi .inputs{
+
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    font-weight: 500;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    
+
+}
+.bmi input{
+font-size: larger;
+margin: 5px;
+
+}
+.bmi button{
+    height: 31px;
+    width: 124px;
+    
+}
+.details {
+
+    margin-left: 500px;
+    font-size: 30px;
+   
+    
+  
+}
+.details p{
+
+    margin: 5px;
+
+}
+
+#results{
+
+    margin-left: 550px;
+    font-size: 50px;
+    color: brown;
+}
+#info{
+
+    margin-left: 550px;
+    font-size: 50px;
+    color: brown;
+}
+
+
+

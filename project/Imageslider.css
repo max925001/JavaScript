@@ -1,0 +1,53 @@
+*{
+
+
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.wrapper{
+    max-width: 1200px;
+    position: relative;
+}
+.wrapper i{
+top: 50%;
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 46px;
+    background: yellow;
+    border-radius: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+}
+.wrapper i:first-child{
+    right: -23px;
+}
+.wrapper i:last-child{
+    right: -23px;
+}
+.wrapper .carousel{
+font-size: 0;
+cursor: pointer;
+overflow: hidden;
+white-space: nowrap; /* vertical to horizontal cover*/
+
+}
+
+.carousel img{
+
+    height: 340px;
+    object-fit: cover;
+    width: calc(100%/3);/* isko karne se 3 image aa jayega*/
+    margin-left: 14px;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style ="background-color: #212121; color:aliceblue;">
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+</body>
+<script>
+
+    function addLanguage(langName){
+
+const li = document.createElement('li')
+li.innerHTML = `${langName}` // ye python ko likh rha hai
+document.querySelector('.language').appendChild(li)
+
+    }
+    addLanguage("python")
+    addLanguage("typescript")
+
+function addOptiLanguage(langName){ /// good approach
+    
+const li = document.createElement('li')
+li.appendChild(document.createTextNode(langName))
+document.querySelector('.language').appendChild(li)
+}
+addOptiLanguage('golang')
+
+
+//EDIT
+
+const secondlang =document.querySelector("li:nth-child(2)") //li:nth-child(2) for selecting python
+//secondlang.innerHTML ="mojo"
+ const newli= document.createElement('li')
+newli.textContent ="mojo"
+secondlang.replaceWith(newli)
+
+
+
+//second eg
+
+const firstlang =document.querySelector("li:first-child")
+firstlang.outerHTML='<lo>Typescript</li>'
+
+
+
+const lastlang = document.querySelector('li:last-child')
+lastlang.remove() //for removing
+
+
+
+
+
+
+</script>
+</html>
