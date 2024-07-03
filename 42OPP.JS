@@ -50,7 +50,7 @@ return this
 
 }
 
-const userOne =  new User("shivam" ,12 ,true)
+const userOne =  new User("shivam" ,12 ,true) // new key word se ek naya object create ho rha hai 
 // new key word
 const userTwo = new User('pandey' ,33,true) // agar yha hum new key word ka use nhi karte to ye overwrite kardega aur userTwo ki value print kara dega userOne me aur ishi liye hum constructor ka use karte hai jo sara properties ko phir de de deta hai
 console.log(userOne)
